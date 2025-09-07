@@ -14,9 +14,9 @@ app.get('/get', async (req, res) => {
     const headshot = req.query.headshot === 'true' ? true : false
 
     if (headshot) {
-        url = `https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds${userId}&size=420x420&format=Png`
+        url = `https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=${userId}&size=420x420&format=Png`
     } else {
-        url = `https://thumbnails.roblox.com/v1/users/avatar?userIds${userId}&size=420x420&format=Png`
+        url = `https://thumbnails.roblox.com/v1/users/avatar?userIds=${userId}&size=420x420&format=Png`
     }
 
     try {
